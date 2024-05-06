@@ -8,21 +8,23 @@
   --logo: Manrope, sans-serif;
 }
 
-
+/*це в нас мобілка */
 .container {
   margin: 0 auto;
   padding: 0 20px;
   min-width: 320px;
 }
 
+/*це контейнер tablet*/
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 704px;
   }
 }
 
-@media screen and (min-width: 1158px) {
+/*це десктопна версія*/
+@media screen and (min-width: 1280px) {
   .container {
-    max-width: 1128px;
+    max-width: 1152px
   }
 }
