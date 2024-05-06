@@ -5,7 +5,9 @@
   --light_green: rgba(212, 253, 225, 1);
   --gray: rgba(243, 245, 246, 1);
   --white: rgba(255, 255, 255, 1);
+  --logo: Manrope, sans-serif;
 }
+
 
 .container {
   margin: 0 auto;
