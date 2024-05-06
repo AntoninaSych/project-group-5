@@ -5,5 +5,26 @@
   --light_green: rgba(212, 253, 225, 1);
   --gray: rgba(243, 245, 246, 1);
   --white: rgba(255, 255, 255, 1);
+  --logo: Manrope, sans-serif;
+}
 
+/*це в нас мобілка */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+}
+
+/*це контейнер tablet*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
+
+/*це десктопна версія*/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1152px
+  }
 }
