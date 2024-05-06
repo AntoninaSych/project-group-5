@@ -1,9 +1,0 @@
-:root {
-  --black: rgba(18, 20, 23, 1);
-  --green: rgba(77, 194, 116, 1);
-  --green_linear: linear-gradient(84.6deg, #4DC274 2.25%, #BEE8CC 131.25%);
-  --light_green: rgba(212, 253, 225, 1);
-  --gray: rgba(243, 245, 246, 1);
-  --white: rgba(255, 255, 255, 1);
-
-}
