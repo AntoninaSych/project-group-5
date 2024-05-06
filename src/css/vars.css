@@ -5,5 +5,22 @@
   --light_green: rgba(212, 253, 225, 1);
   --gray: rgba(243, 245, 246, 1);
   --white: rgba(255, 255, 255, 1);
+}
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1128px;
+  }
 }
