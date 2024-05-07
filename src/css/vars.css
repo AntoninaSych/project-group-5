@@ -1,11 +1,16 @@
 :root {
   --black: rgba(18, 20, 23, 1);
   --green: rgba(77, 194, 116, 1);
+  --green_dark: rgba(56, 174, 95, 1);
   --green_linear: linear-gradient(84.6deg, #4DC274 2.25%, #BEE8CC 131.25%);
   --light_green: rgba(212, 253, 225, 1);
   --gray: rgba(243, 245, 246, 1);
   --white: rgba(255, 255, 255, 1);
-  --logo: Manrope, sans-serif;
+  --font-color: rgba(18, 20, 23, 0.5);
+
+  --font-main: Manrope, sans-serif;
+  --trns-slow: 600ms ease-out;
+  --trns-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*це в нас мобілка */
@@ -27,4 +32,48 @@
   .container {
     max-width: 1152px
   }
+}
+
+button {
+  width:  306px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+  padding: 16px 64px 16px 64px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+button:hover,
+button:focus{
+  cursor: pointer;
+  background-color: var(--green_dark);
+  transition: background-color var(--trns-fast);
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+
+body {
+  font-family:var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color:  var(--font-color);
 }
