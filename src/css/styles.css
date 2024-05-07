@@ -6,7 +6,7 @@
 */
 @import url('./modern-normolize.min.css');
 @import url('./vars.css');
-
+@import url('./basic.css');
 @import url('./header.css');
 
 /*Розкоментовуєте секцію яку берете до роботи*/
