@@ -83,9 +83,9 @@ body {
 }
  
 .title {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1;
 }
 
 section:not(:last-child) {
@@ -126,6 +126,14 @@ section:not(:last-child) {
 }
 
 /* Media queries
+/* це контейнер mobile */
+@media screen and (min-width: 375px) {
+  .title {
+    font-size: 38px;
+    line-height: 1.05;
+  }
+}
+
 /* це контейнер tablet */
 @media screen and (min-width: 768px) {
   .container {
