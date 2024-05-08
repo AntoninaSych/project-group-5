@@ -106,7 +106,7 @@
   fill: var(--white);
   opacity: 1;
   transition: var(--trns-fast);
-  transition-property: fill opacity;
+  transition-property: fill, opacity;
 }
 
 .socials-link:hover .socials-icon,

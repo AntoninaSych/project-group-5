@@ -7,6 +7,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 input, button {
   font-size: inherit;
   font-family: inherit;
@@ -90,7 +94,6 @@ body > main {
 .button:focus {
   transition: background-color var(--trns-fast), border-color var(--trns-fast);
 }
- 
 .title {
   font-size: 30px;
   font-weight: 700;
@@ -146,6 +149,7 @@ section:not(:last-child) {
 /* це контейнер tablet */
 @media screen and (min-width: 768px) {
   .container {
+    padding: 0 32px;
     min-width: 768px;
   }
   .title {
@@ -168,6 +172,7 @@ section:not(:last-child) {
 /* це десктопна версія */
 @media screen and (min-width: 1280px) {
   .container {
+    padding: 0 128px;
     min-width: 1280px;
   }
   section:not(:last-child) {
