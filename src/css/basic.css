@@ -28,8 +28,14 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color:  var(--font-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+body > main {
+  flex-grow: 1;
+}
 
 /*це в нас мобілка */
 .container {
