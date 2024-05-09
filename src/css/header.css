@@ -46,7 +46,6 @@ header .container {
 
 .navigation-menu .menu-item {
   position: relative;
-  overflow: hidden;
 }
 
 .navigation-menu .menu-item .menu-link {
@@ -63,7 +62,7 @@ header .container {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   background-color: var(--green);
   transition: width var(--trns-fast), left var(--trns-fast);
