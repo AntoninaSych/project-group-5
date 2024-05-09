@@ -39,92 +39,190 @@
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 18px;
   }
   
-  .leave-application-section-info {
-    display: none;
+.leave-application-section-info {
+   display: none;
   }
   
-  .leave-application-section-form-title {
-    color: var(-font-color);
-    font-size: 18px;
-    line-height: 1.33333;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    margin-bottom: 14px;
-  }
+.leave-application-section-form-title {
+  color: var(-font-color);
+  font-size: 18px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
 
-  .section-description {
-    font-size: 14px;
-    line-height: 1.71429;
-    color: var(--black-50-transparent);
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-  }
+.section-description {
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--black-50-transparent);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
   
-  .leave-application-section-choose-list {
-    margin-bottom: 40px;
-  }
-  
-  .leave-application-section-choose-list-item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-  
-  .leave-application-section-button {
-    margin-bottom: 16px;
-  }
-  
-  .leave-application-section-privacy-text {
-    color: rgba(var(--font-color-light));
-    font-size: 12px;
-    line-height: 1.333;
-  }
-  
-  .leave-application-section-privacy-link {
-    text-decoration: underline;
-  }
-  
-  @media only screen and (min-width: 768px) {
+.leave-application-section-choose-list {
+  margin-bottom: 40px;
+}
+
+.leave-application-section-choose-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.leave-application-section-button {
+  margin-bottom: 16px;
+}
+
+.leave-application-section-privacy-text {
+  color: rgba(var(--font-color-light));
+  font-size: 12px;
+  line-height: 1.333;
+}
+
+.leave-application-section-privacy-link {
+  text-decoration: underline;
+}
+
+.radio {
+  position: relative;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: -0.28px;
+  user-select: none;
+}
+
+.radio-native {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.radio-label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  padding: 2px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+  background-clip: content-box;
+  transition: var(--transition-timing);
+  transition-property: border-color, background-color;
+}
+
+.radio-native:hover ~ .radio-label:before,
+.radio-native:focus ~ .radio-label:before {
+  border-color: var(--green);
+}
+
+.radio-native:checked ~ .radio-label:before {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.textfield-input {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  transition: border-color var(--transition-timing);
+}
+.textfield-input.last {
+  margin-bottom: 20px;
+}
+
+.textfield-input::placeholder {
+  color: var(--black);
+}
+
+textarea.textfield-input {
+  height: 94px;
+  resize: none;
+}
+
+.textfield-input:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
     .leave-application-section-form {
       max-width: 500px;
       margin: 0 auto;
     }
-  
+    .section-title {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
     .leave-application-section-content textarea.textfield-input {
       margin-bottom: 32px;
     }
-  
     .leave-application-section-choose-list {
       display: flex;
       gap: 20px;
     }
-  
     .leave-application-section-form-title {
       font-size: 20px;
       line-height: 1.2;
     }
-  
     .leave-application-section-choose-list {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
     }
-  
     .leave-application-section-choose-list-item {
       margin-bottom: 0;
     }
-  
     .leave-application-section-privacy-text {
       font-size: 14px;
       line-height: 1.71429;
     }
-  
     .leave-application-section-description {
       max-width: 586px;
+      font-size: 18px;
+      line-height: 1.66;
+      margin-bottom: 64px;
     }
     .leave-application-section-form .textfield-input {
       font-size: 16px; 
+    }
+    .textfield-input {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    textarea.textfield-input {
+      height: 104px;
+    }
+    .radio {
+      font-size: 18px;
+      line-height: 1.33333;
+    }
+    .radio-label::before {
+      width: 20px;
+      height: 20px;
+      padding: 3px;
     }
   }
   
@@ -178,32 +276,7 @@
     }
   }
   
-  .textfield-input {
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.28571;
-    color: var(--black);
-    background-color: transparent;
-    border: 1px solid rgba(18, 20, 23, 0.1);
-    border-radius: 12px;
-    padding: 16px 18px;
-    margin-bottom: 18px;
-    transition: border-color var(--transition-timing);
-  }
-  .textfield-input::placeholder {
-    color: var(--black);
-  }
-  
-  textarea.textfield-input {
-    height: 94px;
-    resize: none;
-  }
-  
-  .textfield-input:focus {
-    border-color: var(--green);
-    outline: none;
-  }
+
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
