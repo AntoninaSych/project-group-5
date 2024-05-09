@@ -1,3 +1,7 @@
+.teachers .container{
+    max-width: 1024px;
+}
+
 
 .teacher-list {
     row-gap: 16px;
@@ -105,6 +109,10 @@
     .header{
         margin: 0 96px 64px;
     }
+
+   .teachers .first {
+       margin: 16px 62px;
+   }
  
 }
 
