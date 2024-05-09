@@ -10,6 +10,13 @@
     justify-content: center;
 }
 
+.teacher-description{
+  font-size: 16px;
+  line-height: 1.66;
+  text-align: center;
+  color: var(--font-color-light);
+}
+
 .teachers .text-container{
     position: relative;
 }
@@ -17,9 +24,9 @@
 .teachers .text-container::after{
     content: '';
     width: 139px;
-    height: 12px;        
+    height: 12px;
     background: #BEE8CC;
-    position: absolute;    
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -59,8 +66,8 @@
 
 @media (min-width: 768px) {
     .teacher-list {
-        row-gap: 32px;
-        margin: 0 64px;
+      display: flex;
+      gap: 32px;
     }
 }
 
@@ -75,16 +82,17 @@
     flex: 0 0 100%;
 }
 
-.card-body .header-thrd{    
+.card-body .header-thrd{
         font-weight: 700;
         font-size: 20px;
-        line-height: 24px;       
+        line-height: 24px;
         letter-spacing: -0.02em;
+        margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
-    .teacher-list li {        
-        gap: 16px;        
+    .teacher-list li {
+        gap: 16px;
         flex: 0 0 calc(50% - 32px);
     }
 }
@@ -99,11 +107,11 @@
 
 @media (min-width: 1280px) {
     .teacher-list li {
-        flex: 0 0 calc(25% - 64px);        
+        flex: 0 0 calc(25% - 64px);
     }
 
     .teacher-list li:not(:last-child) {
-        margin-right: 32px;           
+        margin-right: 32px;
     }
 
     .header{
@@ -113,7 +121,7 @@
    .teachers .first {
        margin: 16px 62px;
    }
- 
+
 }
 
 
