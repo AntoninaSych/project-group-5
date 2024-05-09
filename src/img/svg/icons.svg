@@ -23,5 +23,9 @@
       <path fill="#4dc274" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z" style="fill:var(--color1, #4dc274)"/>
       <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="m22.4 11.2-8.8 9.6-4-4.364" style="stroke:var(--color2, #fff)"/>
     </symbol>
+    <symbol id="icon-check" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"/>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M22.4 11.2l-8.8 9.6-4-4.364"/>
+    </symbol>
   </defs>
 </svg>
