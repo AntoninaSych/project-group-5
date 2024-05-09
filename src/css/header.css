@@ -104,7 +104,6 @@ header .container {
     background: rgba(18, 20, 23, 0.40);
     height: 100%;
     width: 100%;
-    transition: all .25s linear;
     z-index: 70;
     opacity: 0;
   }
@@ -113,6 +112,7 @@ header .container {
     overflow: auto;
     pointer-events: auto;
     opacity: 1;
+    transition: all .25s linear;
   }
 
   .mobile-menu-container.is-open .mobile-menu {
@@ -132,9 +132,12 @@ header .container {
     padding: 20px;
     background-color: var(--green);
     text-align: center;
-    transition: all .25s linear;
     transform: translateX(100%);
     z-index: 71;
+  }
+
+  .mobile-menu-container.is-open .mobile-menu {
+    transition: all .25s linear;
   }
 
   .mobile-menu .close {
