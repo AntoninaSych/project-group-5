@@ -8,11 +8,6 @@
     align-items: center;
 }
 
-.prices-container li:nth-child(2n) {
-    background-color: var(--green);
-    color: var(--white);
-}
-
 .price-option {
     border: var(--green) solid 1px;
     border-radius: 16px;
@@ -46,7 +41,16 @@
     text-align: center;
 }
 
-.prices-container li:nth-child(2n) .offer {
+.price-option:hover,
+.price-option:active{
+    animation: shake 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.price-option:hover .offer,
+.price-option:active .offer {
     color: var(--gray);
 }
 
@@ -54,10 +58,10 @@
     margin-top: 20px;
 }
 
-.prices-container li:nth-child(2n) .our-lesson-button,
-.prices-container li:nth-child(2n) .our-lesson-button:hover,
-.prices-container li:nth-child(2n) .our-lesson-button:active,
-.prices-container li:nth-child(2n) .our-lesson-button:focus {
+.price-option:hover .our-lesson-button,
+.price-option:hover .our-lesson-button:hover,
+.price-option:hover .our-lesson-button:active,
+.price-option:hover .our-lesson-button:focus {
     border: var(--gray) solid 1px;
 }
 
@@ -110,3 +114,21 @@
         font-size: 16px;
     }
 }
+
+@keyframes shake {
+    0%,
+    50%,
+    100% {
+      transform: rotate(0deg);
+    }
+  
+    10%,
+    30% {
+      transform: rotate(-10deg);
+    }
+  
+    20%,
+    40% {
+      transform: rotate(10deg);
+    }
+  }
