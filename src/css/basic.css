@@ -1,0 +1,221 @@
+h1, h2, h3, h4, h5, h6, html, body, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color:  var(--font-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main {
+  flex-grow: 1;
+}
+
+/*це в нас мобілка */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 335px;
+  box-sizing: content-box;
+}
+
+.button {
+  cursor: pointer;
+  max-width: 306px;
+  width: 100%;
+  height: 52px;
+  padding: 14px 12px 14px 12px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.71;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button.primary {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.button.primary:hover,
+.button.primary:focus
+ {
+  background-color: var(--green_dark);
+  border: 1px solid var(--green_dark);
+}
+
+.button.secondary {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.button.secondary:hover,
+.button.secondary:focus
+ {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  color: var(--green);
+}
+
+.button:hover,
+.button:focus {
+  transition: background-color var(--trns-fast), border-color var(--trns-fast);
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+section:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 1.66;
+  text-align: center;
+  color: var(--font-color-light);
+
+}
+
+.section-title {
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.section-title-highlighted::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: 12px;
+  background-color: #bee8cc;
+  border-radius: 8px;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  .section-title-highlighted::after {
+    height: 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Media queries
+/* це контейнер mobile */
+@media screen and (min-width: 375px) {
+  .title {
+    font-size: 38px;
+    line-height: 1.05;
+  }
+}
+
+/* це контейнер tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 704px;
+  }
+  .title {
+    font-size: 60px;
+    line-height: 1.16;
+  }
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  section:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  .button {
+    font-size: 18px;
+    line-height: 1.55;
+    height: 60px;
+    padding: 16px 12px 16px 12px;
+  }
+}
+
+/* це десктопна версія */
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 64px;
+    max-width: 1152px;
+  }
+  section:not(:last-child) {
+    margin-bottom: 150px;
+  }
+}
+
+@keyframes leave-application-outline-pulse {
+  0%   { outline: 1px solid rgba(77, 194, 116, 0); }
+  10%  { outline: 5px solid rgba(77, 194, 116, 0.2); }
+  20%  { outline: 15px solid rgba(77, 194, 116, 0.5); }
+  30%  { outline: 5px solid rgba(77, 194, 116, 0.2); }
+  40%  { outline: 15px solid rgba(77, 194, 116, 0.5); }
+  50%  { outline: 15px solid rgba(77, 194, 116, 0.2); }
+  60%  { outline: 15px solid rgba(77, 194, 116, 0);}
+  100% { outline: 1px solid rgba(77, 194, 116, 0); }
+}
+
+.leave-button {
+  animation-name: leave-application-outline-pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.leave-button:hover,
+.leave-button:focus {
+  animation: none;
+}

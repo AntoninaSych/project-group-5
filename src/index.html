@@ -4,21 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <title>English Excellence</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <header id="header">
+      <load src="./partials/header.html" />
+    </header>
+    <main>
+      <load src="./partials/hero.html" />
+      <load src="./partials/about.html" />
+      <load src="./partials/our_lessons.html" />
+      <load src="./partials/proposal_application.html" />
+      <load src="./partials/teachers.html" />
+      <load src="./partials/leave_application.html" />
+      <load src="./partials/reviews.html" />
+    </main>
+    <footer id="footer">
+      <load src="./partials/footer.html" />
+    </footer>
+    <div id="up" class="hero-anchor up"><svg class="icon">
+      <use href="./img/svg/icons.svg#icon-angle"></use>
+    </svg></div>
     <script type="module" src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </body>
 </html>

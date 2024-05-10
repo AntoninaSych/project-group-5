@@ -1,0 +1,144 @@
+.prices-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-option {
+    border: var(--green) solid 1px;
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 335px;
+}
+
+.price-option h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.price-option .price {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.price-option .offer {
+    color: var(--font-color-light);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.prices-container li:nth-child(2n) {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.prices-container li:nth-child(2n) .offer {
+    color: var(--gray);
+}
+
+.price-option:hover {
+    animation: shake 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.price-option:hover .offer,
+.price-option:active .offer {
+    color: var(--gray);
+}
+
+.prices-container .our-lesson-button {
+    margin-top: 20px;
+}
+
+.price-option:hover .our-lesson-button,
+.price-option:hover .our-lesson-button:hover,
+.price-option:hover .our-lesson-button:active,
+.price-option:hover .our-lesson-button:focus,
+.prices-container li:nth-child(2n) .our-lesson-button {
+    border: var(--gray) solid 1px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .desc {
+        max-width: 665px;
+    }
+
+    .prices-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-items: start;
+    }
+
+    .price-option {
+        max-width: 336px;
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
+    .prices-container .our-lesson-button {
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .desc {
+        max-width: 665px;
+    }
+
+    .prices-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        max-width: 1024px;
+    }
+
+    .price-option {
+        max-width: 320px;
+        flex-basis: calc((100% - 64px) / 3);
+    }
+
+    .price-option .price {
+        line-height: 44px;
+    }
+
+    .price-option .offer {
+        font-size: 16px;
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    20%,
+    40% {
+        transform: rotate(10deg);
+    }
+}

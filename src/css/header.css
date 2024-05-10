@@ -1,21 +1,225 @@
-.header {
-  padding: 20px 0;
+header {
+  width: 100%;
 }
 
-.nav-list {
-  display: flex;
+header .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-wrapper {
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.menu-wrapper .logo {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.menu-wrapper .logo span {
+  color: var(--green);
+}
+
+.menu-wrapper .hamburger {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.menu-wrapper .hamburger .icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--black);
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+
+.navigation-menu .menu-item {
+  position: relative;
+}
+
+.navigation-menu .menu-item .menu-link {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.navigation-menu .menu-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--green);
+  transition: width var(--trns-fast), left var(--trns-fast);
+}
+
+.navigation-menu .menu-item:hover::after {
+  width: 60%;
+  right: 0;
+}
+
+.socials-menu {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.socials-menu .menu-item {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.socials-menu .menu-item .menu-link {
+  display: flex;
+}
+
+.socials-menu .menu-item .menu-icon {
+  fill: var(--white);
+  transition: fill var(--trns-fast);
+}
+
+@media screen and (max-width: 1280px) {
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    background: rgba(18, 20, 23, 0.40);
+    height: 100%;
+    width: 100%;
+    z-index: 70;
+    opacity: 0;
+  }
+
+  .mobile-menu-container.is-open .mobile-menu-overlay {
+    overflow: auto;
+    pointer-events: auto;
+    opacity: 1;
+    transition: all .25s linear;
+  }
+
+  .mobile-menu-container.is-open .mobile-menu {
+    transform: translateX(0);
+    transition: all .25s linear;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    background-color: var(--green);
+    text-align: center;
+    transform: translateX(100%);
+    z-index: 71;
+  }
+
+  .mobile-menu .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: transparent;
+  }
+}
+
+/* таблет версія */
+@media screen and (min-width: 768px) {
+  .menu-wrapper .hamburger .icon {
+    width: 40px;
+  }
+
+  .mobile-menu {
+    padding: 32px;
+  }
+}
+
+/* десктопна версія */
+@media screen and (min-width: 1280px) {
+  header .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .inner-container {
+    width: 100%;
+    max-width: 1151px;
+    padding-left: 64px;
+    padding-right: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation-menu {
+    flex-direction: row;
+  }
+
+  .navigation-menu .menu-item .menu-link {
+    color: var(--black);
+  }
+
+  .socials-menu .menu-item {
+    border: 1px solid rgba(18, 20, 23, 0.10);
+  }
+
+  .socials-menu .menu-item .menu-icon {
+    fill: var(--black);
+    transition: fill var(--trns-fast);
+  }
+
+  .socials-menu .menu-item:hover {
+    border: 1px solid rgba(77, 194, 116, 0.10);
+  }
+
+  .socials-menu .menu-item:hover .menu-icon {
+    fill: var(--green);
+  }
+
+  .mobile-menu-container {
+    flex: 1;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .mobile-menu .close {
+    display: none;
+  }
+
+  .menu-wrapper {
+    width: auto;
+  }
+
+  .menu-wrapper .hamburger {
+    display: none;
+  }
 }

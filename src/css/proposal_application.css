@@ -1,0 +1,269 @@
+.proposal__container {
+  border-radius: 16px;
+  background-image: var(--green_linear);
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.proposal__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.proposal__box {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.proposal__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  z-index: -1;
+  background-color: var(--white);
+}
+
+.proposal__box::before,
+.proposal__box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+@-webkit-keyframes rotate-9 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes rotate-9 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+
+@-webkit-keyframes rotate-11 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(11deg);
+  }
+}
+@keyframes rotate-11 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(11deg);
+  }
+}
+
+
+.proposal__box::before {
+  left: 0;
+  transform: rotate(-9deg);
+  flex-shrink: 0;
+  background-color: var(--light_green);
+  z-index: -1;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.proposal__box.animation::after{
+  content: '';
+  animation: rotate-9 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.proposal__box.animation::before{
+  content: '';
+  animation: rotate-11 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.proposal__box::after {
+  right: 0;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -2;
+}
+
+.proposal__wrap {
+  border-radius: 50%;
+}
+
+.proposal__icon {
+  fill: var(--green);
+  stroke: var(--white);
+}
+
+.proposal__pic {
+  display: none;
+  flex-grow: 1;
+}
+
+.proposal__heading-current {
+  color: #bee8cc;
+}
+
+.proposal__heading {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05;
+  margin-bottom: 42px;
+  color: var(--white);
+}
+
+.proposal__tittle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.proposal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.proposal__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.proposal__item-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .proposal__container {
+    padding: 64px 32px 92px 32px;
+    overflow: unset;
+  }
+
+  .proposal__heading {
+    font-size: 60px;
+    line-height: 1.16;
+    margin-bottom: 72px;
+  }
+
+  .proposal__box {
+    justify-content: start;
+    align-items: center;
+    margin: 0 -14px;
+  }
+
+  .proposal__box::before,
+  .proposal__box::after {
+    border-radius: 30px;
+  }
+
+  .proposal__background {
+    border-radius: 30px;
+  }
+
+  .proposal__list {
+    margin-bottom: 32px;
+  }
+
+  .proposal__item {
+    gap: 16px;
+  }
+
+  .proposal__wrapper {
+    padding: 64px 32px;
+  }
+
+  .proposal__wrap {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal__icon {
+    width: 24px;
+    height: 22px;
+  }
+
+  .proposal__tittle {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .proposal__item-text {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal__pic {
+    display: block;
+    margin-left: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .proposal__pic {
+    z-index: 1;
+    margin-right: -44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal__heading {
+    margin-bottom: 133px;
+    max-width: 780px;
+  }
+
+  .proposal__container {
+    padding: 64px 64px 142px 64px;
+}
+
+  .proposal__box {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .proposal__wrapper {
+    padding: 64px 64px;
+  }
+
+  .proposal__list {
+    margin-bottom: 40px;
+  }
+
+  .proposal__icon {
+    width: 24px;
+    height: 22px;
+  }
+
+  .proposal__tittle {
+    margin-bottom: 40px;
+  }
+}
+
