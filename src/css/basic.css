@@ -195,3 +195,27 @@ section:not(:last-child) {
     margin-bottom: 150px;
   }
 }
+
+@keyframes leave-application-outline-pulse {
+  0%   { outline: 1px solid rgba(77, 194, 116, 0); }
+  10%  { outline: 5px solid rgba(77, 194, 116, 0.2); }
+  20%  { outline: 15px solid rgba(77, 194, 116, 0.5); }
+  30%  { outline: 5px solid rgba(77, 194, 116, 0.2); }
+  40%  { outline: 15px solid rgba(77, 194, 116, 0.5); }
+  50%  { outline: 15px solid rgba(77, 194, 116, 0.2); }
+  60%  { outline: 15px solid rgba(77, 194, 116, 0);}
+  100% { outline: 1px solid rgba(77, 194, 116, 0); }
+}
+
+.leave-button {
+  animation-name: leave-application-outline-pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.leave-button:hover,
+.leave-button:focus {
+  animation: none;
+}
