@@ -99,7 +99,7 @@
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: var(--color-black);
+    color: var(--black);
   }
 
   .proposal__item-text {
@@ -107,7 +107,7 @@
     font-size: 12px;
     line-height: 1.4;
     letter-spacing: -0.02em;
-    color: var(--color-black);
+    color: var(--black);
   }
 
   .proposal__list {
@@ -148,6 +148,7 @@
 
   .proposal__button:hover,
   .proposal__button:focus {
+    color: var(--white);
     background-color: #38ae5f;
   }
 }
@@ -179,7 +180,7 @@
     line-height: 1.05;
     margin-bottom: 20px;
     padding-left: 20px;
-    color: var(--color-white);
+    color: var(--white);
   }
 
   .proposal__heading-current {
@@ -244,8 +245,8 @@
     line-height: 1.7;
     padding: 14px 0;
     border-radius: 12px;
-    color: var(--color-white);
-    background-color: var(--color-green);
+    color: var(--white);
+    background-color: var(--green);
     transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -323,7 +324,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: 32px;
-    color: var(--color-black);
+    color: var(--black);
   }
 
   .proposal__item-text {
@@ -331,7 +332,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: var(--color-black);
+    color: var(--black);
   }
 
   .proposal__button {
@@ -344,8 +345,8 @@
     border-radius: 12px;
     padding: 16px 0;
     max-width: 306px;
-    color: var(--color-white);
-    background-color: var(--color-green);
+    color: var(--white);
+    background-color: var(--green);
     transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -381,7 +382,7 @@
     margin-bottom: 72px;
     padding-left: 64px;
     width: 830px;
-    color: var(--color-white);
+    color: var(--white);
   }
 
   .proposal__heading-current {
@@ -427,7 +428,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: 42px;
-    color: var(--color-black);
+    color: var(--black);
   }
 
   .proposal__item-text {
@@ -435,7 +436,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: var(--color-black);
+    color: var(--black);
   }
 
   .proposal__button {
@@ -448,8 +449,8 @@
     border-radius: 12px;
     padding: 16px 0;
     max-width: 306px;
-    color: var(--color-white);
-    background-color: var(--color-green);
+    color: var(--white);
+    background-color: var(--green);
     transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
