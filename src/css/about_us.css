@@ -1,20 +1,3 @@
-.about .text-container {
-  position: relative;
-}
-
-.about .text-container::after {
-  content: '';
-  height: 12px;
-  width: 39px;
-  background: var(--green-light);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  border-radius: 8px;
-}
-
 .about .section-description {
   margin-bottom: 40px;
   font-size: 14px;
@@ -68,11 +51,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about .text-container::after {
-    height: 18px;
-    width: 52px;
-  }
-
   .about .section-description {
     font-size: 18px;
     line-height: calc(30 / 18);
