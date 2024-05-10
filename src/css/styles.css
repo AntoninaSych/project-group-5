@@ -12,8 +12,7 @@
 
 /*Розкоментовуєте секцію яку берете до роботи*/
 
-/*@import url('./about_us.css');*/
-/*@import url('./footer.css');*/
+@import url('./about_us.css');
 @import url('./hero.css');
 /*@import url('./leave_application.css');*/
 @import url('./our_lessons.css');
@@ -22,5 +21,3 @@
 /*@import url('./teachers.css');*/
 @import url('./teachers.css');
 @import url('./footer.css');
-
-
