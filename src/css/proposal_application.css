@@ -87,12 +87,22 @@
   flex-shrink: 0;
   background-color: var(--light_green);
   z-index: -1;
-  -webkit-animation: rotate-9 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: rotate-9 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-fill-mode: both;
   backface-visibility: hidden;
   animation-duration: 1s;
   animation-delay: 0s;
+}
+
+.animation-degree-9::after{
+  content: '';
+  -webkit-animation: rotate-9 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-9 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animation-degree-11::before{
+  content: '';
+  -webkit-animation: rotate-11 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-11 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .proposal__box::after {
@@ -100,8 +110,6 @@
   flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: -2;
-  -webkit-animation: rotate-11 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: rotate-11 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .proposal__wrap {
