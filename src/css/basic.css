@@ -45,7 +45,7 @@ body > main {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  min-width: 320px;
+  max-width: 320px;
 }
 
 .button {
@@ -163,7 +163,7 @@ section:not(:last-child) {
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
-    min-width: 768px;
+    max-width: 768px;
   }
   .title {
     font-size: 60px;
