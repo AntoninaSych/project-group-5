@@ -1,4 +1,4 @@
-const element = document.querySelector('.animation');
+const element = document.querySelector('.proposal-box-animation');
 const observer = new IntersectionObserver(entries => {
   element.classList.toggle( 'proposal__box', entries[0].isIntersecting );
 });
