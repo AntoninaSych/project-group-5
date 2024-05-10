@@ -1,0 +1,33 @@
+#up {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--light_green);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.5px 1px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: var(--trns-fast);
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+}
+
+#up:hover {
+  background-color: var(--green_dark);
+}
+
+.up .icon {
+  transform: rotate(180deg);
+
+
+  width: 24px;
+  height: 24px;
+  fill: var(--green);
+}
