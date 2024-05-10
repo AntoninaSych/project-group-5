@@ -63,6 +63,33 @@
   color: var(--green);
 }
 
+@keyframes shake {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  20%,
+  40% {
+    transform: rotate(10deg);
+  }
+}
+.footer-rights-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -115,6 +142,7 @@
 .socials-link:focus .socials-icon {
   fill: var(--green);
   opacity: 0.8;
+  animation: shake 2s;
 }
 
 .privacy-list {
