@@ -1,0 +1,128 @@
+.teachers .container{
+    max-width: 1024px;
+}
+
+
+.teacher-list {
+    row-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teacher-description{
+  font-size: 16px;
+  line-height: 1.66;
+  text-align: center;
+  color: var(--font-color-light);
+}
+
+.teachers .text-container{
+    position: relative;
+}
+
+.teachers .text-container::after{
+    content: '';
+    width: 139px;
+    height: 12px;
+    background: #BEE8CC;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 8px;
+    margin-top: 26px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .teachers .text-container::after {
+        content: '';
+        width: 170px;
+        height: 20px;
+        background: #BEE8CC;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        border-radius: 8px;
+        margin-top: 28px;
+        }
+}
+
+@media (min-width: 1280px) {
+    .teachers .text-container::after {
+        content: '';
+        width: 170px;
+        height: 20px;
+        background: #BEE8CC;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        border-radius: 8px;
+        margin-top: 31px;
+    }
+}
+
+@media (min-width: 768px) {
+    .teacher-list {
+      display: flex;
+      gap: 32px;
+    }
+}
+
+.teacher-list li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 40px;
+    flex: 0 0 100%;
+}
+
+.card-body .header-thrd{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .teacher-list li {
+        gap: 16px;
+        flex: 0 0 calc(50% - 32px);
+    }
+}
+
+@media (min-width: 768px)  and (max-width: 1279px) {
+    .teacher-list li:nth-child(2n) {
+        margin-left: 32px;
+    }
+}
+
+
+
+@media (min-width: 1280px) {
+    .teacher-list li {
+        flex: 0 0 calc(25% - 64px);
+    }
+
+    .teacher-list li:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .header{
+        margin: 0 96px 64px;
+    }
+
+   .teachers .first {
+       margin: 16px 62px;
+   }
+
+}
+
+
+
