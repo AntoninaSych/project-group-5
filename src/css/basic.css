@@ -45,7 +45,8 @@ body > main {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 360px;
+  max-width: 335px;
+  box-sizing: content-box;
 }
 
 .button {
@@ -163,7 +164,7 @@ section:not(:last-child) {
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
-    max-width: 832px;
+    max-width: 704px;
   }
   .title {
     font-size: 60px;
@@ -188,7 +189,7 @@ section:not(:last-child) {
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 64px;
-    max-width: 1408px;
+    max-width: 1152px;
   }
   section:not(:last-child) {
     margin-bottom: 150px;
