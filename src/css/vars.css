@@ -1,14 +1,17 @@
 :root {
   --black: #121417;
-  --green: #4DC274;
-  --green_dark: #38AE5F;
-  --green_linear: linear-gradient(84.6deg, #4DC274 2.25%, #BEE8CC 131.25%);
-  --light_green: #D4FDE1;
-  --gray: #F3F5F6;
-  --white: #FFFFFF;
+  --green: #4dc274;
+  --green_dark: #38ae5f;
+  --green-light: #bee8cc;
+  --green_linear: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+  --light_green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #ffffff;
   --font-color: #121417;
   --font-color-light: rgba(18, 20, 23, 0.5);
   --font-main: Manrope, Helvetica, Arial, sans-serif;
   --trns-slow: 600ms ease-out;
   --trns-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+

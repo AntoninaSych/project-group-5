@@ -1,62 +1,97 @@
-.review .container{max-width: 1024px;}
+.review .container {
+  max-width: 1280px;
+  margin-bottom: 150px;
+}
 
 .review-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.review-card {
+  max-width: 320px;
 }
 
 .review-card-comment .review-card-comment-text {
-    margin: 32px;
-    font-size: 16px;
-    line-height: 1.66;
-    text-align: left;
-    color: var(--font-color-light);
+  margin: 32px;
+  font-size: 16px;
+  line-height: 1.66;
+  text-align: left;
+  color: var(--font-color-light);
 }
 
-.section-title {font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.section-description {font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    text-align: center;
+.section-description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.review-list-item {margin: 32px;
-    width: 320px;
-    background-color: var(--gray);
-    border-radius: 30px;}
 
-.review-list-img {
-    text-align: justify;
-    border-radius: 15px;
-    width: 288px;
-    margin-bottom: 10px;
-    color: var(--white);
-    background-color: var(--green);
+.review-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 32px 16px 0 16px;
+  text-align: justify;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: var(--white);
+  background-color: var(--green);
+}
+
+
+.review-card {
+  background-color: var(--gray);
+  border-radius: 30px;
+}
+
+
+.review-card-wrapper img {
+  margin: 14px 8px 14px 16px;
 }
 
 .review-card-description {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .content-list-item-header {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 2px;
 }
 
 .review-card-comment-text {
-    font-size: 0.9em;
-    line-height: 1.2;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+.review-name{
+  display: flex;
+  flex-direction: column;
 }
 
-.review-card {}
+.content-list-item-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+;
 
-.content-list-item-text {}
+}
 
-.review-card-comment {}
+.review-card-comment {
+}

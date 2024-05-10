@@ -1,2 +1,2 @@
 // Розкоментувати import якщо працюєш із меню
-// import "./js/mobile-menu.js"
+import "./js/mobile-menu.js"
