@@ -15,6 +15,7 @@
   font-weight: bolder;
   position: fixed;
   bottom: 20px;
+  z-index: 100;
   right: 30px;
   display: none;
 }
