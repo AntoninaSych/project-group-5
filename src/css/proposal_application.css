@@ -355,7 +355,6 @@
     background-color: #38ae5f;
   }
   .proposal__pic {
-    display: block;
     position: absolute;
     bottom: 126px;
     right: -31px;
@@ -465,3 +464,4 @@
     background-color: #38ae5f;
   }
 }
+
