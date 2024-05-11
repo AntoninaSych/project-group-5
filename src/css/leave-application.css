@@ -1,8 +1,7 @@
 
-.leave-application-section-info-text { 
-  color: rgba(18, 20, 23, 0.80);
+.leave-application-section-info-text {
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -18,32 +17,12 @@
   text-align: center;
   margin-bottom: 14px;
 }
-.section-title-highlighted {
-  position: relative;
-}
 
 .section-description {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
-}
-.section-title-highlighted::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 100%;
-  height: 12px;
-  background-color: #bee8cc;
-  border-radius: 8px;
-  z-index: -1;
-}
-@media only screen and (min-width: 768px) {
-  .section-title-highlighted::after {
-    height: 20px;
-  }
 }
 
 .leave-application-section-content {
@@ -53,13 +32,13 @@
     justify-content: center;
     gap: 18px;
   }
-  
+
 .leave-application-section-info {
    display: none;
   }
-  
+
 .leave-application-section-form-title {
-  color: var(-font-color);
+  color: var(--font-color);
   font-size: 18px;
   line-height: 1.33333;
   font-weight: 600;
@@ -110,6 +89,7 @@
   position: relative;
   display: inline-block;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 .radio-label::before {
@@ -125,8 +105,7 @@
   transform: translateY(-50%);
   user-select: none;
   background-clip: content-box;
-  transition: var(--transition-timing);
-  transition-property: border-color, background-color;
+  transition: border-color var(--trns-fast), background-color var(--trns-fast);
 }
 
 .radio-native:hover ~ .radio-label:before,
@@ -150,7 +129,7 @@
   border-radius: 12px;
   padding: 16px 18px;
   margin-bottom: 18px;
-  transition: border-color var(--transition-timing);
+  transition: border-color var(--trns-fast);
 }
 .textfield-input.last {
   margin-bottom: 20px;
@@ -208,7 +187,7 @@ textarea.textfield-input {
       margin-bottom: 64px;
     }
     .leave-application-section-form .textfield-input {
-      font-size: 16px; 
+      font-size: 16px;
     }
     .textfield-input {
       font-size: 16px;
@@ -227,21 +206,19 @@ textarea.textfield-input {
       padding: 3px;
     }
   }
-  
+
   @media only screen and (min-width: 1280px) {
     .leave-application-section-content {
       flex-direction: row;
       gap: 0;
     }
-  
+
     .leave-application-section-form {
-      margin: 0;
-      max-width: auto;
+      margin: 0 0 18px 16px;
+      max-width: unset;
       flex: 1;
-      margin-left: 16px;
-      margin-bottom: 18px;
     }
-  
+
     .leave-application-section-info {
       display: flex;
       flex-direction: column;
@@ -256,7 +233,7 @@ textarea.textfield-input {
       padding: 0 20px 40px;
       margin-right: 16px;
     }
-  
+
     .leave-application-section-info-title {
       color: var(--white);
       text-align: center;
@@ -265,19 +242,19 @@ textarea.textfield-input {
       font-weight: 700;
       letter-spacing: -0.8px;
     }
-  
+
     .leave-application-section-info-text {
       color: rgba(255, 255, 255, 0.7);
       text-align: center;
       font-size: 16px;
       line-height: 1.5;
     }
-  
+
     .leave-application-section-description {
       max-width: 708px;
     }
   }
-  
+
 
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),

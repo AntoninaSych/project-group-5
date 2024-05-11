@@ -69,9 +69,15 @@
 .price-option:hover .our-lesson-button,
 .price-option:hover .our-lesson-button:hover,
 .price-option:hover .our-lesson-button:active,
-.price-option:hover .our-lesson-button:focus,
-.prices-container li:nth-child(2n) .our-lesson-button {
-    border: var(--gray) solid 1px;
+.price-option:hover .our-lesson-button:focus {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.price-option:hover .our-lesson-button:hover,
+.price-option:hover .our-lesson-button:focus {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--green);
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {

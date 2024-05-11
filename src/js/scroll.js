@@ -1,9 +1,9 @@
-window.onload = () => {
-  const topElement = document.getElementById("header");
-  const upButton = document.getElementById("up");
+window.addEventListener('load', function() {
+  const topElement = document.getElementById("header")
+  const upButton = document.getElementById("up")
 
   upButton.onclick = () => {
-    topElement.scrollIntoView({ 
+    topElement.scrollIntoView({
       behavior: 'smooth',
     })
   }
@@ -16,5 +16,5 @@ window.onload = () => {
     } else {
       upButton.classList.remove('visible')
     }
-  });
-}
+  })
+})
