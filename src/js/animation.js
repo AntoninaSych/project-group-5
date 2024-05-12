@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
       }
     })
   }, {
-    threshold: [0.2] // threshold: if 20% of the element is in the screen, we count it!
+    threshold: [0.3] // threshold: if 30% of the element is in the screen, we count it!
   })
 
   // list of elements to add animation class if they are in viewport

@@ -101,7 +101,7 @@ body > main {
   line-height: 1;
 }
 
-section:not(:last-child) {
+section {
   margin-bottom: 80px;
 }
 
@@ -180,7 +180,7 @@ section:not(:last-child) {
     font-size: 40px;
     line-height: 1.2;
   }
-  section:not(:last-child) {
+  section {
     margin-bottom: 100px;
   }
   .button {
@@ -197,7 +197,7 @@ section:not(:last-child) {
     padding: 0 64px;
     max-width: 1152px;
   }
-  section:not(:last-child) {
+  section {
     margin-bottom: 150px;
   }
 }
