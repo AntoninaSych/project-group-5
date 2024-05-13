@@ -197,6 +197,7 @@ header .container {
 
   .socials-menu .menu-item:hover .menu-icon {
     fill: var(--green);
+    animation: shake 2s;
   }
 
   .mobile-menu-container {
