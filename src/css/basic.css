@@ -101,7 +101,7 @@ body > main {
   line-height: 1;
 }
 
-section:not(:last-child) {
+section {
   margin-bottom: 80px;
 }
 
@@ -120,21 +120,27 @@ section:not(:last-child) {
   margin-bottom: 16px;
   text-align: center;
 }
-.section-title-highlighted::after {
+
+.section-title-highlighted {
+  position: relative;
+}
+
+.section-title-highlighted::before {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  left: 0;
+  bottom: 3px;
   width: 100%;
   height: 12px;
-  background-color: #bee8cc;
+  background-color: var(--green-light);
   border-radius: 8px;
   z-index: -1;
 }
+
 @media only screen and (min-width: 768px) {
-  .section-title-highlighted::after {
+  .section-title-highlighted::before {
     height: 20px;
+    bottom: -4px;
   }
 }
 
@@ -174,7 +180,7 @@ section:not(:last-child) {
     font-size: 40px;
     line-height: 1.2;
   }
-  section:not(:last-child) {
+  section {
     margin-bottom: 100px;
   }
   .button {
@@ -191,7 +197,7 @@ section:not(:last-child) {
     padding: 0 64px;
     max-width: 1152px;
   }
-  section:not(:last-child) {
+  section {
     margin-bottom: 150px;
   }
 }

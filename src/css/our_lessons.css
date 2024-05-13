@@ -39,6 +39,7 @@
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .prices-container li:nth-child(2n) {
@@ -51,8 +52,7 @@
 }
 
 .price-option:hover {
-    animation: shake 2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: jump-shaking 0.83s cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--green);
     color: var(--white);
 }
@@ -62,22 +62,29 @@
     color: var(--gray);
 }
 
-.prices-container .our-lesson-button {
-    margin-top: 20px;
+.price-option:hover .button.primary {
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.price-option:hover .our-lesson-button,
-.price-option:hover .our-lesson-button:hover,
-.price-option:hover .our-lesson-button:active,
-.price-option:hover .our-lesson-button:focus,
-.prices-container li:nth-child(2n) .our-lesson-button {
-    border: var(--gray) solid 1px;
+.price-option:hover .button.primary:hover,
+.price-option:hover .button.primary:focus {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--green);
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
-
+@media (min-width: 768px) {
     .desc {
         max-width: 665px;
+    }
+
+    .price-option .offer {
+        margin-bottom: 32px;
+    }
+
+    .price-option {
+        max-width: 336px;
+        flex-basis: calc((100% - 32px) / 2);
     }
 
     .prices-container {
@@ -86,27 +93,10 @@
         gap: 32px;
         align-items: start;
     }
-
-    .price-option {
-        max-width: 336px;
-        flex-basis: calc((100% - 32px) / 2);
-    }
-
-    .prices-container .our-lesson-button {
-        margin-top: 32px;
-    }
 }
 
 @media (min-width: 1280px) {
-
-    .desc {
-        max-width: 665px;
-    }
-
     .prices-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
         max-width: 1024px;
     }
 
@@ -124,21 +114,12 @@
     }
 }
 
-@keyframes shake {
-
-    0%,
-    50%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    10%,
-    30% {
-        transform: rotate(-10deg);
-    }
-
-    20%,
-    40% {
-        transform: rotate(10deg);
-    }
+@keyframes jump-shaking {
+    0% { transform: translateX(0); }
+    25% { transform: translateY(-9px); }
+    35% { transform: translateY(-9px) rotate(6deg); }
+    55% { transform: translateY(-9px) rotate(-6deg); }
+    65% { transform: translateY(-9px) rotate(6deg); }
+    75% { transform: translateY(-9px) rotate(-6deg); }
+    100% { transform: translateY(0) rotate(0); }
 }

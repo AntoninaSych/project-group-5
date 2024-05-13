@@ -1,6 +1,5 @@
 .review .container {
   max-width: 1280px;
-  margin-bottom: 150px;
 }
 
 .review-list {
@@ -16,6 +15,10 @@
 
 .review-card {
   max-width: 320px;
+}
+
+.review-list .review-card:nth-of-type(1n+2) {
+  display: none;
 }
 
 .review-card-comment .review-card-comment-text {
@@ -39,7 +42,6 @@
   text-align: center;
 }
 
-
 .review-card-wrapper {
   display: flex;
   flex-direction: row;
@@ -52,12 +54,10 @@
   background-color: var(--green);
 }
 
-
 .review-card {
   background-color: var(--gray);
   border-radius: 30px;
 }
-
 
 .review-card-wrapper img {
   margin: 14px 8px 14px 16px;
@@ -78,6 +78,7 @@
   font-size: 0.9em;
   line-height: 1.2;
 }
+
 .review-name{
   display: flex;
   flex-direction: column;
@@ -89,9 +90,18 @@
   line-height: 16px;
   text-align: left;
   color: rgba(255, 255, 255, 0.5);
-;
-
 }
 
-.review-card-comment {
+/* це контейнер tablet */
+@media screen and (min-width: 768px) {
+  .review-list .review-card:nth-of-type(1n+2):not(:nth-of-type(1n+3)) {
+    display: block;
+  }
+}
+
+/* це десктопна версія */
+@media screen and (min-width: 1280px) {
+  .review-list .review-card:nth-of-type(1n+3) {
+    display: block;
+  }
 }
