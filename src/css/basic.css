@@ -110,7 +110,7 @@ section {
   line-height: 1.66;
   text-align: center;
   color: var(--font-color-light);
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
   max-width: 709px;
 }
 
