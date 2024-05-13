@@ -106,11 +106,12 @@ section {
 }
 
 .section-description {
-  font-size: 18px;
-  line-height: 1.66;
+  font-size: 14px;
+  line-height: 1.7;
   text-align: center;
   color: var(--font-color-light);
-
+  margin: 0 auto 40px auto;
+  max-width: 709px;
 }
 
 .section-title {
@@ -135,13 +136,6 @@ section {
   background-color: var(--green-light);
   border-radius: 8px;
   z-index: -1;
-}
-
-@media only screen and (min-width: 768px) {
-  .section-title-highlighted::before {
-    height: 20px;
-    bottom: -4px;
-  }
 }
 
 .visually-hidden {
@@ -172,6 +166,10 @@ section {
     padding: 0 32px;
     max-width: 704px;
   }
+  .section-title-highlighted::before {
+    height: 20px;
+    bottom: -4px;
+  }
   .title {
     font-size: 60px;
     line-height: 1.16;
@@ -188,6 +186,11 @@ section {
     line-height: 1.55;
     height: 60px;
     padding: 16px 12px 16px 12px;
+  }
+  .section-description {
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 64px;
   }
 }
 
