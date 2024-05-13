@@ -1,5 +1,4 @@
 .about .section-description {
-  margin-bottom: 40px;
   font-size: 14px;
   line-height: calc(24 / 14);
 }
@@ -55,7 +54,6 @@
     font-size: 18px;
     line-height: calc(30 / 18);
     max-width: 658px;
-    margin: 0 auto 64px;
   }
 
   .about .list {

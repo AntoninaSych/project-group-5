@@ -18,13 +18,6 @@
   margin-bottom: 14px;
 }
 
-.section-description {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
-}
-
 .leave-application-section-content {
     display: flex;
     flex-wrap: nowrap;
@@ -149,6 +142,12 @@ textarea.textfield-input {
   outline: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .leave-application-section-description.section-description {
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
     .leave-application-section-form {
       max-width: 500px;
@@ -179,12 +178,6 @@ textarea.textfield-input {
     .leave-application-section-privacy-text {
       font-size: 14px;
       line-height: 1.71429;
-    }
-    .leave-application-section-description {
-      max-width: 586px;
-      font-size: 18px;
-      line-height: 1.66;
-      margin-bottom: 64px;
     }
     .leave-application-section-form .textfield-input {
       font-size: 16px;
@@ -248,10 +241,6 @@ textarea.textfield-input {
       text-align: center;
       font-size: 16px;
       line-height: 1.5;
-    }
-
-    .leave-application-section-description {
-      max-width: 708px;
     }
   }
 
