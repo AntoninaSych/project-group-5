@@ -213,7 +213,7 @@ header .container {
     transform: none;
     background: var(--white);
   }
-  mobile-menu-overlay {
+  .mobile-menu-overlay {
     display: none;
   }
 
