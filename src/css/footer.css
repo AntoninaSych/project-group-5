@@ -63,23 +63,6 @@
   color: var(--green);
 }
 
-@keyframes shake {
-  0%,
-  50%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  10%,
-  30% {
-    transform: rotate(-10deg);
-  }
-
-  20%,
-  40% {
-    transform: rotate(10deg);
-  }
-}
 .footer-rights-section {
   display: flex;
   flex-direction: column;
