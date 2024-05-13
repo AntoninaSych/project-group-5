@@ -35,12 +35,6 @@
   text-align: center;
 }
 
-.section-description {
-  font-size: 1.2em;
-  line-height: 1.5;
-  text-align: center;
-}
-
 .review-card-wrapper {
   display: flex;
   flex-direction: row;

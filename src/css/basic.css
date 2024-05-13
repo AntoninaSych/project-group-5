@@ -106,8 +106,8 @@ section {
 }
 
 .section-description {
-  font-size: 18px;
-  line-height: 1.66;
+  font-size: 14px;
+  line-height: 1.7;
   text-align: center;
   color: var(--font-color-light);
   margin: 0 auto 40px auto;
@@ -188,6 +188,8 @@ section {
     padding: 16px 12px 16px 12px;
   }
   .section-description {
+    font-size: 18px;
+    line-height: 1.66;
     margin-bottom: 64px;
   }
 }
